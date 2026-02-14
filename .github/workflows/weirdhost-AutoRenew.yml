@@ -46,9 +46,9 @@ jobs:
         working-directory: scripts
         env:
           HEADLESS: 'true'
-          TELEGRAM_BOT_TOKEN: ${{ secrets.WEIRDHOST_TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.WEIRDHOST_TELEGRAM_CHAT_ID }}
-          REMEMBER_WEB_COOKIE: ${{ secrets.WEIRDHOST_REMEMBER_WEB_COOKIE }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.WEIRDHOST_TG_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.WEIRDHOST_TG_CHAT_ID }}
+          REMEMBER_WEB_COOKIE: ${{ secrets.REMEMBER_WEB_COOKIE }}
         run: python kr-renew.py
 
       # ===============================
